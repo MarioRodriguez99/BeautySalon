@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace BeautySalon.Shared.Entities
 {
-    public class Usuario
+    public class User
     {
         public int Id { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string Nombre { get; set; }
+        public string Name { get; set; }
 
         [Required]
         [EmailAddress]
