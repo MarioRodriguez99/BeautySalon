@@ -1,0 +1,16 @@
+﻿<NavigationLock OnBeforeInternalNavigation="OnBeforeInternalNavigation" />
+
+<EditForm EditContext="editContext" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label>Services:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@service.Name" />
+            <ValidationMessage For="@(() => service.Name)" />
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">SaveChanges</button>
+    <button class="btn btn-success" @onclick="ReturnAction">Return</button>
+</EditForm>
+

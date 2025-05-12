@@ -28,10 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BeautySalon.Shared\BeautySalon.Shared.csproj" />
   </ItemGroup>
 
