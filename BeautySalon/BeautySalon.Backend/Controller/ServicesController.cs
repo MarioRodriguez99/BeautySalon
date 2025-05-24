@@ -25,7 +25,7 @@ namespace BeautySalon.Backend.Controller
             {
                 return NotFound();
             }
-            return Ok();
+            return Ok(service);
         }
 
         [HttpGet]

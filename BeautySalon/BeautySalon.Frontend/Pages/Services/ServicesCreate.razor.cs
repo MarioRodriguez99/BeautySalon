@@ -32,7 +32,7 @@ namespace BeautySalon.Frontend.Pages.Services
                 ShowConfirmButton = true,
                 Timer = 3000,
             });
-            await toast.FireAsync(icon: SweetAlertIcon.Success, message: "Registro guardado con exito");
+            await toast.FireAsync(icon: SweetAlertIcon.Success, message: "Record saved ok");
         }
 
         private void Return()

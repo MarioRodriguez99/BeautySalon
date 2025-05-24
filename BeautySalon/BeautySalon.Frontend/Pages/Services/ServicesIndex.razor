@@ -30,8 +30,8 @@
                             @service.Price
                         </td>
                         <td>
-                            <a class="btn btn-warning">Editar</a>
-                            <button class="btn btn-danger">Borrar</button>
+                            <a class="btn btn-warning" href="/services/edit/@service.Id">Edit</a>
+                            <button class="btn btn-danger" @onclick=@(()=> DeleteAsync(service))>Delete</button>
                         </td>
                     </tr>
                 }

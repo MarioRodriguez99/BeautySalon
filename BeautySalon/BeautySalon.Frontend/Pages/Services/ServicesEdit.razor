@@ -1,0 +1,11 @@
+﻿@page "/services/edit/{Id:int}"
+<h3>Edit Service</h3>
+
+@if (service is null)
+{
+    <Loading/>
+}
+else
+{
+    <ServicesForm @ref="servicesForm" Service="service" OnValidSubmit="EditAsync" ReturnAction="Return"/>
+}
