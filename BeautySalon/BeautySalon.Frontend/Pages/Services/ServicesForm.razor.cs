@@ -12,10 +12,10 @@ namespace BeautySalon.Frontend.Pages.Services
 
         protected override void OnInitialized()
         {
-            editContext = new(service);
+            editContext = new(Service);
         }
 
-        [EditorRequired, Parameter] public Service service { get; set; } = null!;
+        [EditorRequired, Parameter] public Service Service { get; set; } = null!;
         [EditorRequired, Parameter] public EventCallback OnValidSubmit { get; set; }
         [EditorRequired, Parameter] public EventCallback ReturnAction { get; set; }
 

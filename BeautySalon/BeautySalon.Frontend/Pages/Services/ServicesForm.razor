@@ -5,9 +5,19 @@
     <div class="mb-3">
         <label>Services:</label>
         <div>
-            <InputText class="form-control" @bind-Value="@service.Name" />
-            <ValidationMessage For="@(() => service.Name)" />
+            <InputText class="form-control" @bind-Value="@Service.Name" />
+            <ValidationMessage For="@(() => Service.Name)" />
+         </div>
+        <label>Description:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Service.Description" />
+            <ValidationMessage For="@(() => Service.Description)" />    
         </div>
+        <label>Price:</label>
+            <div>
+                <InputNumber class="form-control" @bind-Value="@Service.Price" />
+                <ValidationMessage For="@(() => Service.Price)" />
+            </div>
     </div>
 
     <button class="btn btn-primary" type="submit">SaveChanges</button>

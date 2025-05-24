@@ -11,7 +11,8 @@
             <thead>
                 <tr>
                     <th>Service</th>
-                    <th></th>
+                    <th>Description</th>
+                    <th>Price</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,6 +22,12 @@
                     <tr>
                         <td>
                             @service.Name
+                        </td>
+                        <td>
+                            @service.Description
+                        </td>
+                        <td>
+                            @service.Price
                         </td>
                         <td>
                             <a class="btn btn-warning">Editar</a>

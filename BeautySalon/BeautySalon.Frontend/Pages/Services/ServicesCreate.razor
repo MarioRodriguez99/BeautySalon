@@ -1,3 +1,4 @@
-﻿<h3>ServicesCreate</h3>
-
+﻿@page "/services/create"
+<h3>Create Service</h3>
+<ServicesForm @ref="servicesForm" Service="service" OnValidSubmit="CreateAsync" ReturnAction="Return"></ServicesForm>
 

@@ -31,4 +31,9 @@
     <ProjectReference Include="..\BeautySalon.Shared\BeautySalon.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UnitsOfWork\Interface\" />
+    <Folder Include="UnitsOfWork\Implementation\" />
+  </ItemGroup>
+
 </Project>
