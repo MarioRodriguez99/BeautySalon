@@ -10,5 +10,6 @@ namespace BeautySalon.Backend.Data
         }
 
         public DbSet<Service> Services { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
     }
 }

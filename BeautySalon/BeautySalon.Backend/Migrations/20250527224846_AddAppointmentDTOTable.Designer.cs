@@ -4,6 +4,7 @@ using BeautySalon.Backend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeautySalon.Backend.Migrations
 {
     [DbContext(typeof(BeatySalonContext))]
-    partial class BeatySalonContextModelSnapshot : ModelSnapshot
+    [Migration("20250527224846_AddAppointmentDTOTable")]
+    partial class AddAppointmentDTOTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
